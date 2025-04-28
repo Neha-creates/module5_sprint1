@@ -1,3 +1,10 @@
+
+@media all and (display-mode: fullscreen) {
+    body {
+      margin: 0;
+      border: 5px solid black;
+    }
+  }
 body{
     background-color: lightcyan;
 }
@@ -8,4 +15,27 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     padding-bottom: 10px;
+}
+.div:hover{
+    border-radius: 50px;
+}
+button:hover{
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
+@media (display-mode: picture-in-picture) and (prefers-color-scheme: light) {
+    body {
+        background: antiquewhite;
+    }
+}
+
+@media (display-mode: picture-in-picture) and (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+    }
+
+    a {
+        color: antiquewhite;
+    }
 }
